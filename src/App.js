@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react'
+import axios from 'axios'
+import Dictionary from './component/Dic'
+import Navbar from './component/Navbar'
+import DictionaryContext from './context/DictionaryContext'
+import { useState } from 'react'
+
 
 function App() {
+  const [word, setWord] = useState('');
+  const [data, setData] = useState(null);
+
+  const search = async () => {
+    const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`);
+    setData(response.data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className=' dark:bg-black min-h-screen '>
+      
+      <DictionaryContext.Provider value={{ word, setWord, data, search }}>
+        <Navbar/>
+        <Dictionary/>
+      </DictionaryContext.Provider>
+      
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Dictionary React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a code challenge project from [Frontend Mentor](https://www.frontendmentor.io/).
 
-## Available Scripts
+This is a simple dictionary app built with React. It allows users to search for a word and get its definition, phonetic pronunciation, and audio sound.
 
-In the project directory, you can run:
 
-### `npm start`
+## Screen Example
+![Dictionary App Screenshot](./public/Screen%20Shot%202023-03-09%20at%2011.42.47%20PM.png)
+![Dictionary App Screenshot](./public/Screen%20Shot%202023-03-09%20at%2011.43.06%20PM.png)
+![Dictionary App Screenshot](./public/Screen%20Shot%202023-03-09%20at%2011.43.30%20PM.png)
+![Dictionary App Screenshot](./public/Screen%20Shot%202023-03-09%20at%2011.43.51%20PM.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Search for any word in English
+- Get definition, phonetic pronunciation, and audio sound of the word
+- Audio sound is pre-downloaded and saved in local storage for faster loading in subsequent searches
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- React Hooks (useState, useEffect, useContext)
+- Tailwind CSS
+- Dictionary API (https://dictionaryapi.dev/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository: `git clone https://github.com/Hesam-Dearboy/dictionary_frontend_challeng.git`
+2. Install dependencies: `npm install`
+3. Start the app: `npm start`
+4. Open your browser and go to `http://localhost:3000`
 
-### `npm run eject`
+## How to contribute
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make changes and commit: `git commit -m "your commit message"`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Create a pull request
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dictionary API (https://dictionaryapi.dev/) for providing the data used in this app.
+- Tailwind CSS (https://tailwindcss.com/) for providing the CSS framework used in this app.
